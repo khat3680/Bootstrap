@@ -1,4 +1,12 @@
 $(document).ready(function () {
+    $("#login1").click(function(){
+        $("#loginModal").modal("toggle");
+      });
+
+      $("#resevetable").click(function(){
+        $("#reservemodal").modal("toggle");
+      });
+
     $('#mycarousel').carousel({ interval: 2000 });
     $("#carouselButton").click(function(){
         if ($("#carouselButton").children("span").hasClass('fa-pause')) {
@@ -13,3 +21,7 @@ $(document).ready(function () {
         }
     });
 });
+
+
+    
+  
